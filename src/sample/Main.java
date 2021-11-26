@@ -14,6 +14,7 @@ public class Main extends Application {
         primaryStage.setTitle("Enter your name");
         primaryStage.setScene(new Scene(root,720,480));
         primaryStage.show();
+        primaryStage.isFocused();
     }
 
 
