@@ -1,0 +1,15 @@
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <TextField fx:id="firstName" prefWidth="100" GridPane.columnIndex="0" GridPane.rowIndex="0"
+               promptText="First Name" focusTraversable="false"/>
+    <TextField  fx:id="lastName" prefWidth="100" GridPane.columnIndex="0" GridPane.rowIndex="1"
+                promptText="Last Name" focusTraversable="false" />
+    <Button fx:id="submitButton" text="Submit" GridPane.columnIndex="0" GridPane.rowIndex="2"
+            onAction="#showName"/>
+    <Label fx:id="name" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+</GridPane>
